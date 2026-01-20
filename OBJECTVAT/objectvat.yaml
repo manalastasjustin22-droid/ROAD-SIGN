@@ -1,0 +1,9 @@
+path: C:\Users\lenovo\Documents\ROAD\ROAD\OBJECTVAT\dataset_obj
+train: images/train
+val: images/val
+
+nc: 3
+names:
+  0: Vehicles
+  1: Signs
+  2: Pedestrians

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['Bus', 'Car', 'Jeep', 'Motor', 'Tricycle', 'Van']
+
+roboflow:
+  workspace: boops-place
+  project: philippine-vehicles-combined
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/boops-place/philippine-vehicles-combined/dataset/2

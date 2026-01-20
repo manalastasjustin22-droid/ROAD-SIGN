@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 8
+names: ['50kph_speed_limit', '60kph_speed_limit', '80kph_speed_limit', 'bike_lane', 'no_left_turn', 'no_parking', 'no_right_turn', 'no_uturn']
+
+roboflow:
+  workspace: ateneo-csci11803
+  project: philippine-traffic-sign-dataset-9kz1e
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ateneo-csci11803/philippine-traffic-sign-dataset-9kz1e/dataset/2
