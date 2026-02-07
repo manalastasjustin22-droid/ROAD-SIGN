@@ -23,6 +23,8 @@
     'stairs': '#FFA500',
     'stair': '#FFA500',
     'door': '#00FF00',
+    'vehicle': '#0000FF', 
+    'car': '#0000FF',
     'default': '#00FFFF'
   };
 
