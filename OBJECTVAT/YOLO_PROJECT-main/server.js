@@ -61,6 +61,7 @@ if (ENV === "development") {
     res.json(result);
   });
 
+ 
   // History
   app.get("/api/history", async (req, res) => {
     try {
@@ -73,6 +74,7 @@ if (ENV === "development") {
       res.status(500).json({ error: "Failed to fetch classification history." });
     }
   });
+ 
 
   // Traffic Summary API
   app.get("/api/summary", async (req, res) => {
