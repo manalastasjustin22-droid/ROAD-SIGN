@@ -244,7 +244,11 @@
     if (placeholder) placeholder.textContent = message;
   }
 
-  document.addEventListener('cameraStarted', () => setTimeout(startDetection, 1000));
+  videoPreview.addEventListener('loadedmetadata', () => {
+  setupCanvas();
+  startDetection();
+});
+
   document.addEventListener('cameraStopped', stopDetection);
   videoPreview.addEventListener('loadedmetadata', setupCanvas);
   
