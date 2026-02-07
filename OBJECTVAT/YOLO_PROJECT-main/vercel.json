@@ -3,7 +3,7 @@
     { "source": "/api/upload", "destination": "/api/upload" },
     { "source": "/api/history", "destination": "/api/history" },
     { "source": "/api/summary", "destination": "/api/summary" },
-    { "source": "/api/disease-info", "destination": "/api/disease-info" },
+    { "source": "/api/object-info", "destination": "/api/object-info" },
     { "source": "/summary", "destination": "/api/summary" },
     { "source": "/information", "destination": "/information.html" },
     { "source": "/analytics", "destination": "/analytics.html" },
