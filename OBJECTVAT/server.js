@@ -50,7 +50,7 @@ app.use("/uploads", express.static("uploads"));
 app.get("/", (req, res) => res.redirect("/home"));
 
 // Pages (development only)
-if (ENV === "development") {
+ {
   app.get("/home", (_, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
   app.get("/analytics", (_, res) => res.sendFile(path.join(__dirname, "public", "analytics.html")));
   app.get("/information", (_, res) => res.sendFile(path.join(__dirname, "public", "information.html")));
