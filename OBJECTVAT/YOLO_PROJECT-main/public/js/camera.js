@@ -3,11 +3,30 @@
   'use strict';
 
   // Get DOM elements
-  const useCameraBtn = document.getElementById('useCameraBtn');
-  const stopCameraBtn = document.getElementById('stopCameraBtn');
-  const videoPreview = document.getElementById('videoPreview');
-  const previewPlaceholder = document.getElementById('previewPlaceholder');
-  const loadingSpinner = document.getElementById('loadingSpinner');
+ const useCameraBtn = document.getElementById('useCameraBtn');
+const stopCameraBtn = document.getElementById('stopCameraBtn');
+const yoloStream = document.getElementById('yoloStream'); // Yung bagong img tag
+const placeholder = document.getElementById('previewPlaceholder');
+
+useCameraBtn.addEventListener('click', () => {
+    // Ipakita ang stream mula sa Flask
+    yoloStream.src = "http://127.0.0.1:5000/video_feed";
+    yoloStream.style.display = "block";
+    placeholder.style.display = "none";
+    
+    useCameraBtn.style.display = "none";
+    stopCameraBtn.style.display = "inline-block";
+});
+
+stopCameraBtn.addEventListener('click', () => {
+    // Itigil ang stream
+    yoloStream.src = "";
+    yoloStream.style.display = "none";
+    placeholder.style.display = "block";
+    
+    useCameraBtn.style.display = "inline-block";
+    stopCameraBtn.style.display = "none";
+});
 
   // Camera state
   let stream = null;
