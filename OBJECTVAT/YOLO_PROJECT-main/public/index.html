@@ -33,7 +33,6 @@
   </header>
 
   <main class="container">
-    <!-- HERO SECTION -->
     <section id="home" class="hero-section">
       <h2> Smart Road Object Detection</h2>
       <p>Integrating deep-learning object detection to deliver real-time guidance and traffic alerts users.</p>
@@ -51,11 +50,9 @@
       </div>
     </section>
 
-    <!-- DETECTION SECTION -->
     <section id="detect" class="detection-section">
       <h2>Detect Object</h2>
       
-      <!-- Camera Controls -->
       <div class="camera-controls">
         <button id="useCameraBtn" class="btn primary-btn">
           <i class="fas fa-video"></i>
@@ -67,13 +64,10 @@
         </button>
       </div>
       
-      <!-- DETECTION LAYOUT -->
       <div class="detect-layout">
-        <!-- PREVIEW CONTAINER -->
         <div class="detect-box">
           <h3 class="box-title">Preview</h3>
           <div class="image-preview-container">
-            <!-- Loading Spinner -->
             <div id="loadingSpinner" class="spinner-container" style="display: none;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-label="Loading">
                 <linearGradient id="a12">
@@ -91,10 +85,8 @@
               <p>Analyzing...</p>
             </div>
             
-            <!-- Video Preview -->
-            <video id="videoPreview" autoplay playsinline style="display:none"></video>
+            <img id="yoloStream" src="" style="display:none; width: 100%; border-radius: 10px; border: 2px solid #FF7A00;" alt="AI Detection Stream">
             
-            <!-- Placeholder Text -->
             <p id="previewPlaceholder">Click "Use Camera" to start detection</p>
           </div>
         </div>
@@ -108,12 +100,10 @@
     </div>
   </footer>
 
-  <!-- Image Modal -->
   <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Full size image preview">
     <img id="modalImg" src="" alt="Full size preview">
   </div>
 
-  <!-- Application Scripts -->
   <script src="./js/burger.js"></script>
   <script src="./js/camera.js"></script>
   <script src="./js/script.js"></script>
