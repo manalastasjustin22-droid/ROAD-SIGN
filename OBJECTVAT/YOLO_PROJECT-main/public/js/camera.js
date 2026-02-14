@@ -16,8 +16,13 @@
       
       // I-set ang source sa iyong Python Backend
       // Ang Python ang humahawak sa camera hardware, hindi ang browser JS
-      yoloStream.src = "http://127.0.0.1:5000/video_feed";
-      
+     // Sa loob ng camera.js
+useCameraBtn.addEventListener('click', () => {
+    // Gamitin ang Wi-Fi IP mo
+    yoloStream.src = "http://192.168.100.41:5000/video_feed"; 
+    yoloStream.style.display = "block";
+    placeholder.style.display = "none";
+});
       yoloStream.onload = function() {
         showLoading(false);
         yoloStream.style.display = 'block';
